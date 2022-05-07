@@ -27,9 +27,6 @@ jobs:
         echo PROJECT = $PROJECT
         echo TOOLCHAIN_VER = $TOOLCHAIN_VER
         echo ARCH = $ARCH
-        
-    - name: Setup tmate session
-      uses: mxschmitt/action-tmate@v3
 
     # check out the source
     - name: checkout source
@@ -85,3 +82,6 @@ jobs:
     #   path: build-${{ matrix.project }}/lk.*
 
 # vim: ts=2 sw=2 expandtab
+
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v3
