@@ -27,6 +27,9 @@ jobs:
         echo PROJECT = $PROJECT
         echo TOOLCHAIN_VER = $TOOLCHAIN_VER
         echo ARCH = $ARCH
+        
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v3
 
     # check out the source
     - name: checkout source
